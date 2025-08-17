@@ -1,8 +1,10 @@
 const express = require('express');
 const bodyParser=require('body-parser');
 const mongoose=require('mongoose');
-const userRouter=require('./router/userRouter');
+const userRouter = express.Router();
+// const userRouter=require('./router/userRouter');
 const path = require('path'); 
+
 const app = express();
 app.use(bodyParser.json());
 const PORT = 3001;
